@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <button id="plus"><i class="fa-solid fa-plus"></i></button>
+    <button id="minus"><i class="fa-solid fa-minus"></i></button>
+    <p id="paragraph">0</p>
+
+
+    <script>
+         let count = 0;
+        document.getElementById('plus'),addEventListener('click',function(){
+            const paragraph = document.getElementById('paragraph')
+            count += 1
+            paragraph.innerText = count
+        })
+
+        document.getElementById('minus').addEventListener('click',function(){
+            const paragraph = document.getElementById('paragraph')
+            count -= 1
+            paragraph.innerText = count
+        })
+    </script>
+</body>
+</html>

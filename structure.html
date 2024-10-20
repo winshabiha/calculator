@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header,.nav,.main,.first-aside,.second-aside,.footer{
+            border: 1px solid red;
+            background-color: aqua;
+            padding: 30px;
+        }
+        ul>li{
+            list-style: none;
+        }
+        .header{
+            grid-area: header;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .first-aside{
+            grid-area: first-aside;
+        }
+        .second-aside{
+            grid-area: second-aside;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "nav main main first-aside"
+            "nav main main second-aside"
+            "footer footer footer footer"
+            ;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <header class="header">
+            <h1>Welcome To Jagannath University</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li>Home </li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <main class="main">
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum accusantium quam nemo laboriosam ipsam, quo modi et. Impedit voluptate animi autem inventore velit sunt distinctio, non libero eligendi ullam totam dolor temporibus recusandae placeat. Repellat amet veniam voluptas minima ut nisi beatae esse eaque aut praesentium mollitia consequuntur eius qui dolor quidem quia laborum, porro quo corrupti temporibus numquam, incidunt, a voluptatibus accusamus! Fugiat ipsa asperiores ad dicta quod nostrum voluptatibus deleniti optio quaerat inventore minus perspiciatis assumenda explicabo odit, non sunt delectus quis mollitia. Quaerat dignissimos, placeat quia ratione cum, eligendi soluta quis, in aperiam blanditiis officiis earum inventore?</article>
+            
+            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi velit distinctio et hic aperiam architecto dicta quaerat odio harum vitae eveniet repellat deleniti maiores enim soluta quod magnam sunt mollitia adipisci neque, possimus atque accusantium! Obcaecati accusantium odit amet illum incidunt id magni corrupti possimus nesciunt voluptatibus nam placeat quod consequatur maxime ad voluptatem molestiae, reiciendis natus sit eos quis. Animi voluptas obcaecati labore repellat at veniam quis? Totam et laudantium culpa placeat molestiae aliquid, eum exercitationem nesciunt explicabo modi earum, quod soluta, distinctio ea molestias. Dolorem numquam ab tenetur ipsam aut accusantium fugit neque quia, aliquam, consequuntur labore itaque.</article>
+        </main>
+        <aside>
+            <div class="first-aside" style="height: 50%;">First Aside</div>
+            <div class="second-aside" style="height: 50%;">Second Aside</div>
+        </aside>
+        <footer class="footer">
+            <h1>The End</h1>
+        </footer>
+    </section>
+</body>
+</html>

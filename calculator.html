@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="first"> +
+    <input type="text" name="" id="second"> = 
+    <p id="values">0</p> <br>
+    <button id="Summation">Summation</button>
+
+    <script>
+        document.getElementById('Summation').addEventListener('click',function(){
+            const first = document.getElementById('first')
+            const firstInputValue = first.value;
+            const second = document.getElementById('second')
+            const secondInputValue = second.value
+            const sum =  parseInt(first.value) + parseInt(second.value)
+            const paragraph = document.getElementById('values')
+            paragraph.innerText = sum
+        })
+    </script>
+</body>
+</html>

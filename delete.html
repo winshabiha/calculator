@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="input" placeholder="enter your data">
+    <button id="submit">Submit</button>
+    <button id="delete">Delete</button>
+    <ul id="unorder">
+        
+    </ul>
+
+
+    <script>
+        document.getElementById('submit').addEventListener('click',function(){
+        const input = document.getElementById('input')
+        const unorder = document.getElementById('unorder')
+        const li = document.createElement('li')
+        const inputValue = input.value
+        li.setAttribute('id',inputValue)
+        li.innerText = inputValue
+        unorder.appendChild(li)
+        input.value = ''
+        })
+      document.getElementById('delete').addEventListener('click',function(){
+        const unorder = document.getElementById('unorder')
+        const input = document.getElementById('input')
+        const inputValue = input.value
+        const list = document.getElementById(inputValue)
+        unorder.removeChild(list)
+        input.value = ''
+        // deletes.remove(input)
+      })
+    </script>
+</body>
+</html>
