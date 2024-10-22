@@ -13,18 +13,40 @@
 <body>
     <input type="text" name="" id="first"> +
     <input type="text" name="" id="second"> = 
-    <p id="values">0</p> <br>
-    <button id="Summation">Summation</button>
+    <p id="values">0</p> <br> <br>
+    <button id="Summation">Summation</button> 
+    <button id="Subtraction">Subtraction</button> 
+    <button id="Multiplication">Multiplication</button> 
+    <button id="division">division</button> 
 
     <script>
         document.getElementById('Summation').addEventListener('click',function(){
             const first = document.getElementById('first')
-            const firstInputValue = first.value;
             const second = document.getElementById('second')
-            const secondInputValue = second.value
             const sum =  parseInt(first.value) + parseInt(second.value)
             const paragraph = document.getElementById('values')
             paragraph.innerText = sum
+        })
+        document.getElementById('Subtraction').addEventListener('click',function(){
+            const first = document.getElementById('first')
+            const second = document.getElementById('second')
+            const sub =  parseInt(first.value) - parseInt(second.value)
+            const paragraph = document.getElementById('values')
+            paragraph.innerText = sub
+        })
+        document.getElementById('Multiplication').addEventListener('click',function(){
+            const first = document.getElementById('first')
+            const second = document.getElementById('second')
+            const Multiplication =  parseInt(first.value) * parseInt(second.value)
+            const paragraph = document.getElementById('values')
+            paragraph.innerText = Multiplication
+        })
+        document.getElementById('division').addEventListener('click',function(){
+            const first = document.getElementById('first')
+            const second = document.getElementById('second')
+            const division =  parseInt(first.value) / parseInt(second.value)
+            const paragraph = document.getElementById('values')
+            paragraph.innerText = division
         })
     </script>
 </body>
